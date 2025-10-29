@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.sweettreat.SweettreatFragment"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp">
+
+    <TextView
+        android:id="@+id/text_sweettreat"
+        android:text="buy a sweet treat for the cattle."
+        android:background="@color/purple_200"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:letterSpacing="0.1"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:padding="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="* treats are from breadscraps.com but priced up a bit for the cattle's benefit. click the image to add to cart. ... (this is fake you will not be sent any bread b t dubs)"
+        app:layout_constraintTop_toBottomOf="@id/text_sweettreat"
+        android:textSize="8dp"
+        android:paddingTop="3dp"
+        android:textAlignment="center"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <ImageButton
+        android:id="@+id/cake_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/text_sweettreat"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:src="@mipmap/cake_1"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:id="@+id/cake_title"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/cake_img"
+        app:layout_constraintTop_toBottomOf="@id/text_sweettreat"
+        android:text="black sesame mini cake"
+        android:layout_marginTop="30dp"
+        android:textSize="30dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/cake_desc"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cake_title"
+        app:layout_constraintLeft_toRightOf="@id/cake_img"
+        android:layout_marginLeft="10dp"
+        app:layout_goneMarginTop="10dp"
+        android:text="a petite sweet treat with a velvet mood ($45)"
+        />
+
+
+
+    <ImageButton
+        android:id="@+id/corn_img"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        app:layout_constraintTop_toBottomOf="@id/cake_img"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:src="@mipmap/corn_1"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitCenter"
+        />
+
+    <TextView
+        android:id="@+id/corn_title"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/corn_img"
+        app:layout_constraintTop_toBottomOf="@id/cake_img"
+        android:text="blue corn slab"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/corn_desc"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/corn_title"
+        app:layout_constraintLeft_toRightOf="@id/corn_img"
+        android:layout_marginLeft="10dp"
+        app:layout_goneMarginTop="10dp"
+        android:text="ciabatta and focaccia’s lovechild has turned blue, carrying a delicate corn flavor and the deepest popcorn aroma
+ ($38)"
+        />
+
+
+    <ImageButton
+        android:id="@+id/donut_img"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        app:layout_constraintTop_toBottomOf="@id/corn_img"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:src="@mipmap/donut_1"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitCenter"
+        />
+
+    <TextView
+        android:id="@+id/donut_title"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/donut_img"
+        app:layout_constraintTop_toBottomOf="@id/corn_img"
+        android:text="apple cider donut"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/donut_desc"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/donut_title"
+        app:layout_constraintLeft_toRightOf="@id/donut_img"
+        android:layout_marginLeft="10dp"
+        app:layout_goneMarginTop="10dp"
+        android:text="yummy ! ($86)"
+        />
+
+    <TextView
+        android:id="@+id/cart_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="my cart:"
+        app:layout_constraintTop_toBottomOf="@id/donut_img"
+        app:layout_constraintLeft_toLeftOf="@id/donut_img"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:id="@+id/cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="black sesame mini cakes: 0\nblue corn slabs: 0\n apple cider donuts: 0"
+        app:layout_constraintTop_toBottomOf="@id/cart_header"
+        app:layout_constraintLeft_toLeftOf="@id/donut_img"
+        />
+
+    <TextView
+        android:id="@+id/cart_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="total: $0 (see sweet treat tab to pay)"
+        app:layout_constraintTop_toBottomOf="@id/cart"
+        app:layout_constraintLeft_toLeftOf="@id/donut_img"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/clear_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="clear cart"
+        app:layout_constraintTop_toBottomOf="@id/cart_total"
+        app:layout_constraintLeft_toLeftOf="@id/cart"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

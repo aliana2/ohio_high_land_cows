@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.donate.DonateFragment"
+    android:paddingRight="30dp"
+    android:paddingLeft="30dp"
+    >
+
+    <TextView
+        android:id="@+id/text_donate"
+        android:text="donate!"
+        android:background="@color/purple_200"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:letterSpacing="0.1"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:padding="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+
+    <TextView
+        android:id="@+id/donate_info"
+        android:paddingTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/text_donate"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="thanks for donating! please enter your credit card information below. by clicking donate, you agree to your credit card information being used. do not put in you real credit card info. or do! hehehehe"
+        android:textSize="8dp"
+        />
+
+    <TextView
+        android:id="@+id/donate_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="in your cart in the sweet treat tab, you have a total of $0, which is the amount you will be donating by pressing submit!"
+        app:layout_constraintTop_toBottomOf="@id/donate_info"
+        android:layout_marginTop="10dp"
+        app:layout_constraintRight_toRightOf="@id/donate_info"
+        />
+
+    <EditText
+        android:id="@+id/card_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="card number"
+        app:layout_constraintTop_toBottomOf="@id/donate_total"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:paddingTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/cvv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/card_num"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:hint="cvv"
+        />
+
+    <EditText
+        android:id="@+id/exp_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cvv"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:hint="expiration date"
+        />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/exp_date"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:hint="name on card"
+        />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        app:layout_constraintTop_toBottomOf="@id/name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="10dp"
+        />
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/submit"
+        app:layout_constraintLeft_toLeftOf="parent"
+        >
+        <TextView
+            android:id="@+id/past_submissions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/remember_card_info_prompt"
+            />
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
